@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .first-box {
+            border: 2px solid black;
+            border-bottom: none;
+            width: 500px;
+            
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            border: 2px solid black;
+            width: 500px;
+            height: 600px;
+        }
+        
+        .flex-container > div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        
+        .flex-item1 {
+            flex: 1; background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="first-box">Mock 3</div>
+    <div class="flex-container">
+        <div class="colours flex-item1" style="flex-basis: 1000px">green box</div>
+        <div><img src="pic1.jpeg" width="100px" height="100px"></div>
+        <div><img src="pic2.jpeg" width="100px" height="100px"></div>
+        <div><img src="pic3.jpeg" width="100px" height="100px"></div>
+        <div class="colours" style="background: yellow">yellow box</div>
+        <div class="colours" style="background: red">red box</div>
+        <div class="colours" style="background: blue">blue box</div>
+    </div>
+</body>
+</html>
